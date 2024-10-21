@@ -6,5 +6,8 @@
   "scripts": {
     "cypress:open": "npx cypress open",
     "cypress:run": "npx cypress run"
+  },
+  "devDependencies": {
+    "mochawesome": "^7.1.3"
   }
 }

@@ -1,0 +1,181 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-10-21T04:47:46.205Z",
+    "end": "2024-10-21T04:47:55.688Z",
+    "duration": 9483,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1d5bcd90-2327-42ea-9d91-a60c523aa16a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\E2E Tests\\TestesCriacaoUsuario.cy.js",
+      "file": "cypress\\e2e\\E2E Tests\\TestesCriacaoUsuario.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d3000975-c33e-4d35-997e-3d2544763e28",
+          "title": "Testes de Criacao de Usuario",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Exibe mensagem de campo obrigatório - Nome",
+              "fullTitle": "Testes de Criacao de Usuario Exibe mensagem de campo obrigatório - Nome",
+              "timedOut": null,
+              "duration": 1802,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.criaNovoUsuario(\"\", email, senha);\ncy.get('.alert').should('be.visible').contains('Nome é um campo obrigatório');",
+              "err": {},
+              "uuid": "525904d1-13fc-4261-a12f-6e2a8b1d5eac",
+              "parentUUID": "d3000975-c33e-4d35-997e-3d2544763e28",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Exibe mensagem de campo obrigatório - Email",
+              "fullTitle": "Testes de Criacao de Usuario Exibe mensagem de campo obrigatório - Email",
+              "timedOut": null,
+              "duration": 1246,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.criaNovoUsuario(nome, \"\", senha);\ncy.get('.alert').should('be.visible').contains('Email é um campo obrigatório');",
+              "err": {},
+              "uuid": "4338e932-a20b-4e26-ab0e-aa53e2d34cf4",
+              "parentUUID": "d3000975-c33e-4d35-997e-3d2544763e28",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Exibe mensagem de campo obrigatório - Senha",
+              "fullTitle": "Testes de Criacao de Usuario Exibe mensagem de campo obrigatório - Senha",
+              "timedOut": null,
+              "duration": 1342,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.criaNovoUsuario(nome, email, \"\");\ncy.get('.alert').should('be.visible').contains('Senha é um campo obrigatório');",
+              "err": {},
+              "uuid": "72d8ae7c-e05d-4630-b9dc-62dd07e2aeff",
+              "parentUUID": "d3000975-c33e-4d35-997e-3d2544763e28",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Exibe mensagem de campo obrigatório - Todos os campos",
+              "fullTitle": "Testes de Criacao de Usuario Exibe mensagem de campo obrigatório - Todos os campos",
+              "timedOut": null,
+              "duration": 825,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.criaNovoUsuario(\"\", \"\", \"\");\ncy.get('.alert').should('be.visible').contains('Nome é um campo obrigatório');\ncy.get('.alert').should('be.visible').contains('Email é um campo obrigatório');\ncy.get('.alert').should('be.visible').contains('Senha é um campo obrigatório');",
+              "err": {},
+              "uuid": "37445aaf-fb7e-47d7-97d6-ba67b0156eee",
+              "parentUUID": "d3000975-c33e-4d35-997e-3d2544763e28",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cria usuário com sucesso",
+              "fullTitle": "Testes de Criacao de Usuario Cria usuário com sucesso",
+              "timedOut": null,
+              "duration": 1772,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.criaNovoUsuario(nome, email, senha);\ncy.get('.alert').should('be.visible').contains('Usuário inserido com sucesso');",
+              "err": {},
+              "uuid": "3fd1f3a3-8b03-41e8-9679-9784670edc78",
+              "parentUUID": "d3000975-c33e-4d35-997e-3d2544763e28",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "525904d1-13fc-4261-a12f-6e2a8b1d5eac",
+            "4338e932-a20b-4e26-ab0e-aa53e2d34cf4",
+            "72d8ae7c-e05d-4630-b9dc-62dd07e2aeff",
+            "37445aaf-fb7e-47d7-97d6-ba67b0156eee",
+            "3fd1f3a3-8b03-41e8-9679-9784670edc78"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6987,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
